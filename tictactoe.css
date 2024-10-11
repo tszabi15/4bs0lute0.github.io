@@ -1,0 +1,77 @@
+﻿@keyframes colorChange {
+    0% {
+        background-color: lightblue;
+    }
+    25% {
+        background-color: rgb(149, 162, 220);
+    }
+    50% {
+        background-color: rgb(81, 135, 176);
+    }
+    75% {
+        background-color: rgb(81, 113, 200);
+    }
+    100% {
+        background-color: royalblue;
+    }
+}
+/*
+* {
+    border: thin solid red;
+}
+*/
+#table_head {
+    display: table;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.row-grid {
+    display: table-row;
+}
+.cell-grid {
+    display: table-cell;
+    background-color: lightblue;
+    border-radius: 0.25em;
+    font-weight: bolder;
+    font-size: 4em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.cell-grid:hover {
+    animation: colorChange 0.5s;
+    background-color: royalblue;
+}
+#turn {
+    text-align: center;
+}
+#errorMess {
+    text-align: center;
+}
+
+body {
+    background-color: cornflowerblue;
+}
+
+#restart {
+    width: 3em;
+    height: 1.5em;
+    font-size: 3em;
+    border-radius: 0.5em;
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.25em;
+    margin: 0 auto;
+    box-shadow: 0.1em 0.1em 0.1em brown;
+    cursor: pointer;
+    display: none;
+}
+
+#restart:hover {
+    padding: 0.3em;
+}
