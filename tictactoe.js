@@ -34,7 +34,7 @@ cells.forEach(function(cell, index) {
     cell.addEventListener("click", function(){
         if (winner){return};
         if (cell.textContent !== "") {
-            errorText.textContent = "HĂ©Ă©Ă©! Ez mĂˇr ki volt vĂˇlasztva!"
+            errorText.textContent = "HEY It has been taken!"
             errorText.opacity = 1;
             gsap.killTweensOf(errorText);
             gsap.fromTo(errorText, 
